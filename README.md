@@ -17,7 +17,7 @@ You are free to use, modify, and distribute this project under the terms of that
 ## 🚀 Play Now
 Just open **`index.html`** in your browser — no installation needed.  
 
-Or play at:  **[https://99fk/checkers-html.github.io/](https://99fk.github.io/checkers-html/)**
+Or play at:  **[https://99fk.github.io/checkers-html](https://99fk.github.io/checkers-html)**
 
 ## ❤️ Credits
 Made with ☕ and a little help from ChatGPT (OpenAI).
