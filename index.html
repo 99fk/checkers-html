@@ -82,7 +82,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </head>
 <body>
 <header>
-  <h1>Checkers / Draughts — <small>Single‑File • Local • vs AI</small></h1>
+  <h1>Checkers — <small>Single‑File • Local • vs AI</small></h1>
   <div class="row">
     <label class="muted">Language</label>
     <select id="lang" class="select">
@@ -215,6 +215,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   let selected = null;
   let legalForSelected = [];
   let result = null;
+
+  let mode = 'local';
 
   // AI settings
   let aiHumanColor = 1;
@@ -479,7 +481,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
   function logMove(side, start, end, captures){
     const p=document.createElement('p');
-    p.innerHTML = `<span class="muted">${side===1?'Red':'Black'}</span> ${coord(start)} → ${coord(end)}${captures? ' ×'+captures:''}`;
+    p.innerHTML =
+  '<span class="muted">' + (side === 1 ? 'Red' : 'Black') + '</span> ' +
+  coord(start) + ' &rarr; ' + coord(end) +
+  (captures ? ' &times;' + captures : '');
     elLog.appendChild(p); elLog.scrollTop = elLog.scrollHeight;
   }
 
